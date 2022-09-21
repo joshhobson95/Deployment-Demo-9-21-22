@@ -11,7 +11,7 @@ app.use(express.json())
 //initial html file
 app.use('/', express.static(path.join(__dirname, '..client/index.html')))
 //then the whole folder
-app.use(express.static(path.join(__dirname, '..client')))
+app.use(express.static(path.join(__dirname, '../client')))
 
 
 //make sure that package.json and html src are correctly formatted
